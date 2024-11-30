@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CompositionalLayoutCell" customModule="fefu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="185"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA8-hf-0Dn">
+                        <rect key="frame" x="20" y="39" width="77.666666666666671" height="107"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0sv-vc-goN">
+                        <rect key="frame" x="149" y="0.0" width="218" height="185"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gA8-hf-0Dn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="5hr-JS-e3f"/>
+                <constraint firstAttribute="bottom" secondItem="gA8-hf-0Dn" secondAttribute="bottom" constant="39" id="6zs-87-so5"/>
+                <constraint firstAttribute="bottom" secondItem="0sv-vc-goN" secondAttribute="bottom" id="Mgg-aI-mE6"/>
+                <constraint firstAttribute="trailing" secondItem="0sv-vc-goN" secondAttribute="trailing" id="ZQY-xi-LUD"/>
+                <constraint firstItem="0sv-vc-goN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aF0-4g-g1L"/>
+                <constraint firstItem="0sv-vc-goN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="149" id="mVh-8s-DDo"/>
+                <constraint firstItem="gA8-hf-0Dn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="39" id="oDg-ws-zvk"/>
+            </constraints>
+            <size key="customSize" width="588" height="261"/>
+            <connections>
+                <outlet property="ActivityImage" destination="0sv-vc-goN" id="Brj-hv-4aX"/>
+                <outlet property="ActivityName" destination="gA8-hf-0Dn" id="bDD-nj-dhE"/>
+            </connections>
+            <point key="canvasLocation" x="-25.362318840579711" y="38.504464285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
